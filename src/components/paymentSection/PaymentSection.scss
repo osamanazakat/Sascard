@@ -8,6 +8,10 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     gap: 5rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__text {
@@ -34,6 +38,11 @@
       color: #110d34;
       font-weight: 500;
       font-size: 1rem;
+    }
+
+    @include respond(tab-port) {
+      width: 98%;
+      margin-inline: auto;
     }
   }
 
@@ -62,6 +71,10 @@
     place-content: center;
     text-align: center;
     box-shadow: 0 0 40px 5px rgba(132, 132, 132, 0.2);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__users {
@@ -72,5 +85,9 @@
     border-radius: 1rem;
     bottom: -8%;
     box-shadow: 0 0 40px 5px rgba(132, 132, 132, 0.2);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
