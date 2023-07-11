@@ -6,6 +6,7 @@ import PaymentSection from "./components/paymentSection/PaymentSection";
 import CtaSection from "./components/ctaSection/CtaSection";
 import PlansSection from "./components/plansSection/PlansSection";
 import BlogSection from "./components/blogSection/BlogSection";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CtaSection />
       <PlansSection />
       <BlogSection />
+      <Footer />
     </>
   );
 }
